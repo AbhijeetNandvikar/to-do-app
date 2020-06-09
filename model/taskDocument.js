@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/to-do-app')
+mongoose.connect('mongodb+srv://abhijeet:ABHIJEET@cluster0-23mjp.mongodb.net/Tasks?retryWrites=true&w=majority')
     .then(console.log('connected to db'))
     .catch(err => console.log(err))
 
