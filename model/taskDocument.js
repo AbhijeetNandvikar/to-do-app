@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://abhijeet:ABHIJEET@cluster0-23mjp.mongodb.net/Tasks?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://abhijeet:ABHIJEET@cluster0-23mjp.mongodb.net/Tasks?retryWrites=true&w=majority', { useNewUrlParser: true })
     .then(console.log('connected to db'))
     .catch(err => console.log(err))
 
@@ -64,4 +64,4 @@ async function deleteTask(id) {
 
 // Exporting taskDocument
 
-module.exports = { taskDocument, getTasks, createTask, updateTask, deleteTask };
+module.exports = { taskDocument, getTasks, createTask, updateTask, deleteTask }; 
