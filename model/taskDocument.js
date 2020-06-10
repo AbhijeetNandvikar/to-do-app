@@ -31,7 +31,7 @@ async function createTask(t, d, s) {
 // accessing the document
 
 async function getTasks() {
-    return await taskDocument.find({})
+    return await taskDocument.find()
 }
 
 

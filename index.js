@@ -6,7 +6,7 @@ app.use(express.json())
 
 
 app.get('/', (req, res) => {
-    res.send(db.getTasks());
+    db.getTasks().then(msg => res.send(msg))
 })
 
 app.post('/task', (req, res) => {
