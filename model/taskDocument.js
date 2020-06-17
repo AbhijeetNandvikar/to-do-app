@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://abhijeet:ABHIJEET@cluster0-23mjp.mongodb.net/Tasks?retryWrites=true&w=majority', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://abhijeet:abhijeet@cluster0-23mjp.mongodb.net/Tasks?retryWrites=true&w=majority', { useUnifiedTopology: true })
     .then(console.log('connected to db'))
     .catch(err => console.log(err))
 
